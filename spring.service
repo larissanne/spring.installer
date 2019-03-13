@@ -1,0 +1,11 @@
+[Unit]
+Description=Spring
+
+[Service]
+User = Spring
+WorkingDirectory = /home/spring
+ExecStart = /usr/bin/java -jar /home/spring/app.jar
+
+[install]
+WantedBy = multi-user.target
+
